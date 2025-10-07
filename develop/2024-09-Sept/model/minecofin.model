@@ -1,0 +1,1078 @@
+% ------------------------------------------------
+% ------------- Transition variables -------------
+% ------------------------------------------------
+
+!transition_variables
+
+% --------------------------------
+% -------- Fiscal policy ---------
+
+"Fiscal impulse, % of GDP"  fisc_imp
+
+"Budget deficit, % of GDP"    def_y
+"Struct. deficit, % of GDP"   def_y_str
+"Cyc. deficit, % of GDP"      def_y_cyc
+"Discr. deficit, % of GDP"    def_y_discr
+
+"Govt. demand (G&S), % GDP"           gdem_y 
+"Struct. govt. demand (G&S), % GDP"   gdem_y_str 
+"Cyc. govt. demand (G&S), % GDP"      gdem_y_cyc 
+"Discr. govt. demand (G&S), % GDP"    gdem_y_discr
+
+"Other govt. exp., % to GDP"          oexp_y 
+"Cyc. other govt. exp., % to GDP"     oexp_y_cyc 
+"Struct. other govt. exp., % to GDP"  oexp_y_str 
+"Discr. other govt. exp., % to GDP"   oexp_y_discr
+
+"Govt. rev., % of GDP"          grev_y   
+"Struct. govt. rev., % of GDP"  grev_y_str
+"Cyc. govt. rev., % of GDP"     grev_y_cyc
+"Discr. govt. rev., % of GDP"   grev_y_discr
+
+"Fiscal grants, % of GDP"   grants_y
+
+% ----------------------------------------
+% -------- Components of real GDP --------
+
+% ----- Private consumption -----
+
+"Consumption gap, %"            l_cons_gap
+"Exptd. cons. gap, %"           e_l_cons_gap
+"Consumption, 100*log"          l_cons
+"Consumption, ann. QQ %"        dl_cons
+"Consumption, YY %"             d4l_cons
+"Consumption tnd., 100*log"     l_cons_tnd
+"Consumption tnd., ann. QQ %"   dl_cons_tnd
+"Consumption tnd., YY %"        d4l_cons_tnd
+
+% ----- Private investment -----
+
+"Investment gap, %"           l_inv_gap
+"Exptd. investment gap, %"    e_l_inv_gap
+"Investment, 100*log"         l_inv
+"Investment, ann. QQ %"       dl_inv
+"Investment, YY %"            d4l_inv
+"Investment tnd., 100*log"    l_inv_tnd
+"Investment tnd., ann. QQ %"  dl_inv_tnd
+"Investment tnd., YY %"       d4l_inv_tnd
+
+% ----- Government demand for G&S -----
+
+"Gov. demand gap, %"            l_gdem_gap
+"Gov. demand, 100*log"          l_gdem
+"Gov. demand, ann. QQ %"        dl_gdem
+"Gov. demand, YY %"             d4l_gdem
+"Gov. demand, tnd., 100*log"    l_gdem_tnd
+"Gov. demand, tnd., ann. QQ %"  dl_gdem_tnd
+"Gov. demand, tnd., YY %"       d4l_gdem_tnd
+
+% ----- Exports of G&S -----
+
+"Export gap, %"           l_exp_gap
+"Exptd. export gap, %"    e_l_exp_gap
+"Export RMCI, %"          rmci_exp
+"Export, 100*log"         l_exp
+"Export, ann. QQ %"       dl_exp
+"Export, YY %"            d4l_exp
+"Export tnd., 100*log"    l_exp_tnd
+"Export tnd., ann. QQ %"  dl_exp_tnd
+"Export tnd., YY %"       d4l_exp_tnd
+
+% ----- Imports of G&S -----
+
+"Import gap, %"           l_imp_gap
+"Import, 100*log"         l_imp
+"Import, ann. QQ %"       dl_imp
+"Import, YY %"            d4l_imp
+"Import tnd., 100*log"    l_imp_tnd
+"Import tnd., ann. QQ %"  dl_imp_tnd
+"Import tnd., YY %"       d4l_imp_tnd
+
+% ----- GDP -----
+
+"Output gap, %"         l_y_gap
+"Exptd. output gap, %"  e_l_y_gap
+"GDP, 100*log"          l_y
+"GDP, ann. QQ %"        dl_y
+"GDP, YY %"             d4l_y
+"GDP tnd., 100*log"     l_y_tnd
+"GDP tnd., ann. QQ %"   dl_y_tnd
+"GDP tnd., YY %"        d4l_y_tnd
+
+% ----- Agricultural output -----
+
+"Agric. output gap, %"          l_y_agr_gap
+"Exptd. agric. output gap, %"   e_l_y_agr_gap
+"Agric. GDP, 100*log"           l_y_agr
+"Agric. GDP, ann.QQ %"          dl_y_agr
+"Agric. GDP, YY %"              d4l_y_agr
+"Agric. GDP tnd., 100*log"      l_y_agr_tnd
+"Agric. GDP tnd., ann.QQ %"     dl_y_agr_tnd
+"Agric. GDP tnd., YY %"         d4l_y_agr_tnd
+
+% ------------------------
+% -------- Prices --------
+
+% ----- Headline CPI
+
+"Headline CPI, 100*log"           l_cpi
+"Headline CPI, ann. QQ %"         dl_cpi
+"Exptd. Headline CPI, ann. QQ %"  e_dl_cpi
+"Headline CPI, YY %"              d4l_cpi
+
+% ----- Core CPI -----
+
+"Core CPI, 100*log"            l_cpi_core
+"Core CPI, ann. QQ %"          dl_cpi_core
+"Exptd. Core CPI, ann. QQ %"   e_dl_cpi_core
+"Core CPI, YY %"               d4l_cpi_core
+
+% ----- Food CPI -----
+
+"Food CPI, 100*log"           l_cpi_food
+"Food CPI, ann. QQ %"         dl_cpi_food
+"Exptd. Food CPI, ann. QQ %"  e_dl_cpi_food
+"Food CPI, YY %"              d4l_cpi_food
+
+% ----- Energy CPI -----
+
+"Energy CPI, 100*log"           l_cpi_ener
+"Energy CPI, ann. QQ %"         dl_cpi_ener
+"Exptd. energy CPI, ann. QQ %"  e_dl_cpi_ener
+"Energy CPI, YY %"              d4l_cpi_ener
+
+% ---------------------------------
+% -------- Relative prices --------
+
+% ----- Real marginal cost gap -----
+
+"RMC, %"  rmc
+
+% ----- Core/headline relative prices -----
+
+"Core rel. price, 100*log"          l_rp_cpi_core
+"Core rel. price, ann. QQ %"        dl_rp_cpi_core
+"Core rel. price, YY %"             d4l_rp_cpi_core
+"Core rel. price gap, %"            l_rp_cpi_core_gap
+"Core rel. price tnd., 100*log"     l_rp_cpi_core_tnd
+"Core rel. price tnd., ann. QQ %"   dl_rp_cpi_core_tnd
+"Core rel. price tnd., YY %"        d4l_rp_cpi_core_tnd
+
+"Dir. ext. eff. in core, ann. QQ %" dl_cpi_core_direct
+
+% ----- Food/headline relative prices -----
+
+"Food rel. price, 100*log"          l_rp_cpi_food
+"Food rel. price, ann QQ. %"        dl_rp_cpi_food
+"Food rel. price, YY %"             d4l_rp_cpi_food
+"Food rel. price gap, %"            l_rp_cpi_food_gap
+"Food rel. price tnd., 100*log"     l_rp_cpi_food_tnd
+"Food rel. price tnd., ann. QQ %"   dl_rp_cpi_food_tnd
+"Food rel. price tnd., YY %"        d4l_rp_cpi_food_tnd
+
+"Dir. ext. eff. in food, ann. QQ %" dl_cpi_food_direct
+
+% ----- Energy/headline relative prices -----
+
+"Energy rel. price, 100*log"          l_rp_cpi_ener
+"Energy rel. price, ann. QQ %"        dl_rp_cpi_ener
+"Energy rel. price, YY %"             d4l_rp_cpi_ener
+"Energy rel. price gap, %"            l_rp_cpi_ener_gap
+"Energy rel. price tnd., 100*log"     l_rp_cpi_ener_tnd
+"Energy rel. price tnd., ann. QQ %"   dl_rp_cpi_ener_tnd
+"Energy rel. price tnd., YY %"        d4l_rp_cpi_ener_tnd
+
+"Dir. ext. eff. in energy, ann. QQ %" dl_cpi_ener_direct
+
+% ---------------------------------
+% -------- Monetary policy --------
+
+% ----- Nominal interest rate -----
+
+"Policy rate (IB rate used), %"     i
+"Policy rate tnd (IB rate used), %" i_tnd
+
+% ----- Real interest rate -----
+
+"Real interest (policy) rate, %"              r
+"RIR (policy) gap, %"                         r_gap
+"Exptd. RIR (policy) gap, %"                  e4_r_gap
+"Exptd. RIR (lending) gap, 4-Q ahead av., %"  r4_gap
+"RIR (policy) trend, %"                       r_tnd
+
+% ----- Lending premium -----
+
+"Lending premium, %"      prem_d
+"Lending premium gap, %"  prem_d_gap
+
+% ----- Inflation target -----
+
+"Inflation target, YY %"            d4l_cpi_tar
+"Headline CPI dev, 4-Q ahead YY %"  d4l_cpi_dev
+
+"Impl. core infl. target, YY %"   d4l_cpi_core_tar
+"Impl. food infl. target, YY %"   d4l_cpi_food_tar
+"Impl. ener. infl. target, YY %"  d4l_cpi_ener_tar
+
+% ----- Real monetary condition index -----
+
+"RMCI cons., %"     rmci_cons
+"RMCI invest., %"   rmci_inv
+
+% -------------------------------
+% -------- Exchange rate --------
+
+% ----- Nominal exchange rate ------
+
+"Exchng. rate, 100*log"         l_s
+"Exchng. rate, ann. QQ %"       dl_s
+"Exchng. rate, YY %"            d4l_s
+"Exptd. exchng. rate, 100*log"  e_l_s
+
+"Exchng rate target, ann. QQ %"   dl_s_tar
+
+% ----- Sovereign risk premium -----
+
+"Risk premium, %"   prem
+
+% ----- Real exchange rate -----
+
+"Real exchng. rate, 100*log"          l_z
+"Real exchng. rate, ann. QQ %"        dl_z
+"Real exchng. rate, YY %"             d4l_z
+"Exptd. RER, ann. QQ %"               e_dl_z
+"Real exchng. rate trend, 100*log"    l_z_tnd
+"Real exchng. rate trend, ann. QQ %"  dl_z_tnd
+"Real exchng. rate trend, YY %"       d4l_z_tnd
+"Exp. RER trend., ann. QQ %"          e_dl_z_tnd
+"Real exchng. rate gap, %"            l_z_gap
+
+% -------- Money demand --------
+
+"Money, 100*log"                  l_md
+"Real money, 100*log"             l_rmd
+"Real money, ann. QQ %"           dl_rmd
+"Real money, YY %"                d4l_rmd
+"Change of velocity, ann. QQ %"   dl_v
+
+% ------------------------------------
+% -------- External variables --------
+
+% ----- External demand -----
+
+"Foreign output gap, %"   l_ystar_gap
+
+% ----- Foreign prices -----
+
+"Foreign CPI, 100*log"          l_cpistar
+"Foreign CPI, ann. QQ %"        dl_cpistar
+"Foreign CPI, YY %"             d4l_cpistar
+"Exptd. foreign CPI, 100*log"   e_dl_cpistar
+
+% ----- Foreign interest rate -----
+
+"Foreign interest rate, %"              istar
+"Foreign real interest rate trend, %"   rstar_tnd
+
+% ----- World food prices -----
+
+"Foreign food price, 100*log"     l_foodstar
+"Foreign food price, ann. QQ %"   dl_foodstar
+"Foreign food price, YY %"        d4l_foodstar
+
+"Foreign rel. food price, 100*log"    l_rp_foodstar
+"Foreign rel. food price, ann. QQ %"  dl_rp_foodstar
+"Foreign rel. food price, YY %"       d4l_rp_foodstar
+
+"Foreign rel. food price gap, %"  l_rp_foodstar_gap
+
+"Foreign rel. food price tnd., 100*log"     l_rp_foodstar_tnd
+"Foreign rel. food price tnd., ann. QQ %"   dl_rp_foodstar_tnd
+"Foreign rel. food price tnd., YY %"        d4l_rp_foodstar_tnd
+
+% ----- World energy prices -----
+
+"Foreign ener. price, 100*log"    l_enerstar
+"Foreign ener. price, ann. QQ %"  dl_enerstar
+"Foreign ener. price, YY %"       d4l_enerstar
+
+"Foreign rel. ener. price, 100*log"     l_rp_enerstar
+"Foreign rel. ener. price, ann. QQ %"   dl_rp_enerstar
+"Foreign rel. ener. price, YY %"        d4l_rp_enerstar
+
+"Foreign rel. ener. price gap, %"   l_rp_enerstar_gap
+
+"Foreign rel. ener. price tnd., 100*log"    l_rp_enerstar_tnd
+"Foreign rel. ener. price tnd., ann. QQ %"  dl_rp_enerstar_tnd
+"Foreign rel. ener. price tnd., YY %"       d4l_rp_enerstar_tnd
+
+% ---------------------------------------------
+% ------------- Transition shocks -------------
+% ---------------------------------------------
+
+!transition_shocks
+
+"Fiscal grants, % of GDP"   shock_grants_y
+
+"Gdem. cyc. shock, % of GDP"    shock_gdem_y_str 
+"Gdem. str. shock, % of GDP"    shock_gdem_y_cyc 
+"Gdem. discr. shock, % of GDP"  shock_gdem_y_discr
+
+"Gov exp. cyc. shock, % of GDP"     shock_oexp_y_str 
+"Gov exp. str. shock, % of GDP"     shock_oexp_y_cyc 
+"Gov exp. discr. shock, % of GDP"   shock_oexp_y_discr
+
+"Gov rev. str. shock, % of GDP"     shock_grev_y_str
+"Gov rev. cyc. shock, % of GDP"     shock_grev_y_cyc
+"Gov rev. discr. shock, % of GDP"   shock_grev_y_discr
+
+"Cons. gap shock, %"          shock_l_cons_gap
+"Inv. gap shock, %"           shock_l_inv_gap
+"Export gap shock, %"         shock_l_exp_gap
+"Import gap shock, %"         shock_l_imp_gap
+"Output gap shock, %"         shock_l_y_gap
+"Agric. output gap shock, %"  shock_l_y_agr_gap
+
+"Core infl. shock, ann. QQ %"     shock_dl_cpi_core
+"Food infl. shock, ann. QQ %"     shock_dl_cpi_food
+"Energy infl. shock, ann. QQ %"   shock_dl_cpi_ener
+"CPI discr. shock, 100*log"       shock_l_cpi
+
+"Policy rate shock, %"      shock_i
+"Lending premium shock, %"  shock_prem_d_gap
+
+"Exchng. rate shock, 100*log"           shock_l_s
+"Exchng. rate target shock, ann. QQ %"  shock_dl_s_tar
+
+"Real money dem. shock, ann. QQ %"  shock_dl_rmd
+"Chng. of vel. shock, ann. QQ %"    shock_dl_v
+
+"Cons. tnd. shock, ann. QQ %"   shock_dl_cons_tnd
+"Inv. tnd. shock, ann. QQ %"    shock_dl_inv_tnd
+"Export shock, ann. QQ %"       shock_dl_exp_tnd
+"Import tnd. shock, ann. QQ %"  shock_dl_imp_tnd
+
+"CPI target shocck, YY %"                   shock_d4l_cpi_tar
+"Food rel. price. tnd. shock, ann. QQ %"    shock_dl_rp_cpi_food_tnd
+"Energy rel. price. tnd. shock, ann. QQ %"  shock_dl_rp_cpi_ener_tnd
+"RER tnd. shock, ann. QQ %"                 shock_dl_z_tnd
+"Premium shock, %"                          shock_prem
+"Agric. output tnd. shock, %"               shock_dl_y_agr_tnd
+
+"Foreign output gap shock, %"                     shock_l_ystar_gap
+"Foreign CPI shock, ann. QQ %"                    shock_dl_cpistar
+"Foreign intr. rate shock, %"                     shock_istar
+"Foreign rel. food price gap shock, %"            shock_l_rp_foodstar_gap
+"Foreign rel. ener. price gap shock, %"           shock_l_rp_enerstar_gap
+"Foreign rel intr. rate rtnd. shock, %"           shock_rstar_tnd
+"Foreign rel. food price tnd. shock, ann. QQ %"   shock_dl_rp_foodstar_tnd
+"Foreign rel. ener. price tnd. shock, ann. QQ %"  shock_dl_rp_enerstar_tnd
+
+% ----------------------------------------
+% --------------- Parameters -------------
+% ----------------------------------------
+
+!parameters
+
+% -------------------------------
+% -------- Steady states --------
+
+"steady state govt rev in % of GDP"          ss_grev_y_str
+"steady state govt other exp in % of GDP"     ss_oexp_y_str
+"steady state govt other exp in % of GDP"   ss_gdem_y_str
+
+"SS of borrowing ratio, % of GDP"   ss_bor_str
+"SS of FCY debt share"              ss_debt_fcy_rat
+"SS of fiscal grants ratio, % GDP"  ss_grants_y
+
+"SS of FCY gov. debt. intr. prem., %" ss_prem_debt_fcy
+"SS of LCY gov. debt. intr. prem., %" ss_prem_debt_lcy
+
+"SS of GDP growth, ann. QQ %"       ss_dl_y_tnd
+"SS of agric.GDP growth, ann. QQ %" ss_dl_y_agr_tnd
+
+"CPI target, YY %"                  ss_d4l_cpi_tar
+"SS of food rel. price, ann. QQ %"  ss_dl_rp_cpi_food_tnd
+"SS of ener. rel. price, ann. QQ %" ss_dl_rp_cpi_ener_tnd
+
+"SS of RER depr., ann. QQ %"  ss_dl_z_tnd
+"SS of risk premium, %"       ss_prem
+"SS of lending premium, %"    ss_prem_d
+
+"SS of chng. of vel., ann. QQ %"  ss_dl_v
+
+% ---------------------------------------
+% -------- Cyclical coefficients --------
+
+% ----- Fiscal parameters -----
+
+"Fiscal, grants. persist."                d7
+
+" grev_y_cyc response to cons * rev/GDP"     v1
+" grev_y_cyc response to imports * rev/GDP"  v2
+" grev_y_cyc response outputgap * rev/GDP"   v3
+" grev_y_str, lag"                           v4
+
+"oexp_y_cyc,lag %"                            u1
+"oexp_y_cyc response output gap * oexp/GDP"   u2
+"oexp_y_str, lag %"                           u3
+
+"gdem_y_cyc (Govt demand G&S), lag"         t1
+"gdem_y_cyc response outputgap * gdem/GDP"  t2
+"gdem_y_str (Govt demand G&S), lag"         t3
+"gdem_y_discr (Govt demand G&S), lag"       t4
+
+"gdem_y_discr in fiscal impulse" s1
+
+% ----- GDP components -----
+
+"Consumption gap, lag"              a1_cons
+"Consumption gap, expect."          a2_cons
+"Consumption gap, RMCI"             a3_cons
+"Consumption gap, output gap"       a4_cons
+"Consumption gap, fisc. imp."       a5_cons
+"Consumption gap, domestic in RMCI" a6_cons
+
+"Investment gap, lag"               a1_inv
+"Investment gap, expect."           a2_inv
+"Investment gap, RMCI(RIR, RER)"    a3_inv
+"Investment gap, output gap"        a4_inv
+"Investment gap, fisc. imp."        a5_inv
+"Investment gap, domestic in RMCI"  a6_inv
+
+"Export gap, lag"               a1_exp
+"Export gap, expect."           a2_exp
+"Export gap, RMCI(RIR, REER)"   a3_exp
+"Export gap, foreign dem."      a5_exp
+"Export gap, domestic in RMCI"  a6_exp
+
+"Import gap, REER coeffient"        a1_imp
+
+"Agric.output gap AR(1)"          r1_y_agr
+
+% ----- Phillips curves -----
+
+"Core Phillips curve, lag"              b1
+"Core Phillips curve, RMC"              b2
+"Core Phillips curve, direct imp."      b3
+"Core Phillips curve, domestic in RMC"  b4
+
+"Food Phillips c., lag"                     bf1
+"Food Phillips c.,RMC indirect importprice" bf2
+"Food Phillips c.,direct importprice"       bf3
+"+Food Phillips c., agric.output gap neg."  bf4
+
+"Energy Phillips curve, lag"          be1
+"Energy Phillips curve, RMC"          be2
+"Energy Phillips curve, direct imp."  be3
+
+% ----- Monetary policy rule -----
+
+"Policy rule, lag"            c1
+"Policy rule, inflation"      c2
+"Policy rule, output gap"     c3
+"Policy rule, FX target"      c4
+"Inflation target, persist."  c5
+"Lending premium, lag"        c6
+
+% ----- Exchange rate -----
+
+"Exchng rate, UIP"                e1
+"Exchng rate expect., forward"    e2
+"Premium, persist."               e3
+"Exchng rate target, persist."    e4
+"Exchng rate target, infl. dev."  e5
+"Exchng rate target, REER gap"    e6
+
+% ----- Money demand -----
+
+"Real money dem., lag"              m1
+"Real money dem., interest rate"    m2
+"Change velocity,lag"               m3
+
+% -------------------------
+% -------- Weights --------
+
+"Import gap, cons.share imports"        w_imp_cons
+"Import gap, inv.share imports"         w_imp_inv
+"Import gap, govdemand share imports"   w_imp_gdem
+"Import gap, exp.share imports"         w_imp_exp
+
+"GDP gap, cons. share GDP"      w_y_cons
+"GDP gap, inv. share GDP"       w_y_inv
+"GDP gap, govdemand share GDP"  w_y_gdem
+"GDP gap, exp. share GDP"       w_y_exp
+"GDP gap, imp. share GDP"       w_y_imp
+
+"Weight of core in CPI"   w_core
+"Weight of food in CPI"   w_food
+"Weight of energy in CPI" w_ener
+
+% ------------------------------------
+% -------- Trend persistences --------
+
+"Cons. tnd. persist."             r_cons
+"Inv. tnd. persist."              r_inv
+"Gov. demand, tnd. persist."      r_gdem
+"Export tnd. persist."            r_exp
+"Import tnd. persist."            r_imp
+"Agric.output tnd. persist."      r2_y_agr
+"RER tnd. persist."               r_z
+"Food rel. price tnd. persist."   r_rp_food
+"Energy rel. price tnd. persist." r_rp_ener
+
+% ------------------------------------------
+% -------- Foreign block parameters --------
+
+"SS of foreign CPI, ann. QQ %"              ss_dl_cpistar
+"SS of foreign real intr. rate, %"          ss_rstar_tnd
+"SS of foreign rel. food price, ann. QQ %"  ss_dl_rp_foodstar_tnd
+"SS of foreign rel. ener. price, ann. QQ %" ss_dl_rp_enerstar_tnd
+
+"foreign demand persist."           r_ystar
+"foreign CPI persist."              r_cpistar
+"foreign interest rate persist."    r_istar
+"for. interest rate tnd. persist."  r_rstar_tnd
+"for. rp food persist."             r_rp_foodstar_gap
+"for. rp energy persist."           r_rp_enerstar_gap
+"for. rp food tnd. persist."        r_rp_foodstar_tnd
+"for. rp energy tnd. persist."      r_rp_enerstar_tnd
+
+% -----------------------------------------------
+% ------------- Transition equations ------------
+% -----------------------------------------------
+
+!transition_equations
+
+% -------------------------------
+% -------- Fiscal policy --------
+
+grants_y   = d7 * grants_y {-1} + (1-d7) * ss_grants_y + shock_grants_y;
+
+grev_y = grev_y_str + grev_y_cyc + grev_y_discr;
+grev_y_cyc = v1 * l_cons_gap + v2 * l_imp_gap + v3 * l_y_gap + shock_grev_y_cyc;
+grev_y_str = ...
+          + v4 * grev_y_str{-1} ...
+          + (1-v4) * ss_grev_y_str ...
+          + shock_grev_y_str;
+grev_y_discr = shock_grev_y_discr;
+
+oexp_y = oexp_y_str + oexp_y_cyc + oexp_y_discr;
+oexp_y_cyc = u1 * oexp_y_cyc{-1} - u2 * l_y_gap + shock_oexp_y_cyc;
+oexp_y_str = ...
+  + u3 * oexp_y_str{-1} ...
+  + (1-u3) * ss_oexp_y_str ...
+  + shock_oexp_y_str;
+oexp_y_discr = shock_oexp_y_discr;
+
+gdem_y = gdem_y_str + gdem_y_cyc + gdem_y_discr;
+gdem_y_cyc = t1 * gdem_y_cyc{-1} - t2 * l_y_gap + shock_gdem_y_cyc;
+gdem_y_str = ...
+   + t3 * gdem_y_str{-1} ...
+   + (1-t3) * ss_gdem_y_str ...
+   + shock_gdem_y_str;
+gdem_y_discr = t4 * gdem_y_discr{-1} + shock_gdem_y_discr;
+
+l_gdem/100 = log(gdem_y / 100) + l_y/100;
+l_gdem_tnd/100 = log(gdem_y_str / 100) + l_y_tnd/100;
+
+def_y       = gdem_y        + oexp_y        - grev_y;
+def_y_str   = gdem_y_str    + oexp_y_str    - grev_y_str;
+def_y_cyc   = gdem_y_cyc    + oexp_y_cyc    - grev_y_cyc;
+def_y_discr = gdem_y_discr  + oexp_y_discr  - grev_y_discr;
+
+fisc_imp = ...
+  + s1 * gdem_y_discr  + oexp_y_discr  - grev_y_discr ...
+  + def_y_str - def_y_str{-1};
+
+% -----------------------------
+% -------- Real demand --------
+
+% ----- Consumption gap -----
+% (note fisc_imp is indirect effect of l_gdem_gap)
+
+l_cons_gap = ...
+  + a1_cons * l_cons_gap{-1} ...
+  + a2_cons * e_l_cons_gap ...
+  - a3_cons * rmci_cons ...
+  + a4_cons * l_y_gap ...
+  + a5_cons * fisc_imp ...  
+  + shock_l_cons_gap;
+
+rmci_cons = a6_cons * r4_gap + (1 - a6_cons) * -l_z_gap;
+
+e_l_cons_gap = l_cons_gap{+1};
+
+% ----- Investment gap -----
+%  (note fisc_imp is indirect effect of l_gdem_gap)
+
+l_inv_gap = ...
+  + a1_inv * l_inv_gap{-1} ...
+  + a2_inv * e_l_inv_gap ...
+  - a3_inv * rmci_inv ...
+  + a4_inv * l_y_gap ...
+  + a5_inv * fisc_imp ...  
+  + shock_l_inv_gap;
+
+rmci_inv = a6_inv * r4_gap + (1 - a6_inv) * -l_z_gap;
+
+e_l_inv_gap = l_inv_gap{+1};
+
+% ----- Export gap -----
+
+l_exp_gap = ...
+  + a1_exp * l_exp_gap{-1} ...
+  + a2_exp * e_l_exp_gap ...
+  - a3_exp * rmci_exp ...
+  + a5_exp * l_ystar_gap ...
+  + shock_l_exp_gap;
+
+rmci_exp = a6_exp * r4_gap + (1 - a6_exp) * - l_z_gap;
+
+e_l_exp_gap = l_exp_gap{+1};
+
+% ----- Import gap -----
+% (RER added same for all importdemands,coeff REER>0,so -a1_imp)
+
+l_imp_gap = ...
+  + w_imp_cons  * l_cons_gap ...
+  + w_imp_inv   * l_inv_gap ...
+  + w_imp_gdem  * l_gdem_gap ...
+  + w_imp_exp   * l_exp_gap ...
+  - a1_imp      * l_z_gap ...
+  + shock_l_imp_gap;
+
+% ----- Output gap -----
+% (note direct effect of l_gdem_gap on l_y_gap)
+
+l_y_gap = ...
+  + w_y_cons  * l_cons_gap ...
+  + w_y_inv   * l_inv_gap ...
+  + w_y_gdem  * l_gdem_gap ...
+  + w_y_exp   * l_exp_gap ...
+  - w_y_imp   * l_imp_gap ...
+  + shock_l_y_gap;
+
+e_l_y_gap = l_y_gap{+1};
+
+% -----------------------------------------
+% -------- Agricultural output gap --------
+
+l_y_agr_gap = r1_y_agr * l_y_agr_gap{-1} + shock_l_y_agr_gap;
+
+e_l_y_agr_gap = l_y_agr_gap{+1};
+
+% ------------------------
+% -------- Prices --------
+
+% ----- Core Phillips curve -----
+
+dl_cpi_core = ...
+  + b1 * dl_cpi_core{-1} ...
+  + (1 - b1 - b3) * (e_dl_cpi_core) ...
+  + b3 * dl_cpi_core_direct ...
+  + b2 * rmc ...
+  + shock_dl_cpi_core;
+
+rmc = b4 * l_y_gap + (1 - b4) * l_z_gap;
+
+dl_cpi_core_direct = dl_cpistar + dl_s - dl_z_tnd;
+
+e_dl_cpi_core = dl_cpi_core{+1};
+
+l_rp_cpi_core = l_cpi_core - l_cpi;
+
+% ----- Food Phillips curve -----
+% agric. output gap in food inflation, with coeff as BNR-IMF -0.5
+
+dl_cpi_food = ...
+  + bf1 * dl_cpi_food{-1} ...
+  + (1 - bf1 - bf3) * (e_dl_cpi_food) ...
+  + bf3 * dl_cpi_food_direct ...
+  + bf2 * (l_rp_foodstar_gap + l_z_gap + l_rp_cpi_core_gap - l_rp_cpi_food_gap) ...
+  - bf4 * l_y_agr_gap ...
+  + shock_dl_cpi_food;
+
+dl_cpi_food_direct = dl_foodstar - dl_rp_foodstar_tnd + dl_s - dl_z_tnd ...
+  - dl_rp_cpi_core_tnd + dl_rp_cpi_food_tnd;
+  
+e_dl_cpi_food = dl_cpi_food{+1};
+
+l_rp_cpi_food = l_cpi_food - l_cpi;
+
+% ----- Energy Phillips curve -----
+
+dl_cpi_ener = ...
+  + be1 * dl_cpi_ener{-1} ...
+  + (1 - be1 - be3) * (e_dl_cpi_ener)...
+  + be3 * dl_cpi_ener_direct ...
+  + be2 * (l_rp_enerstar_gap + l_z_gap  + l_rp_cpi_core_gap - l_rp_cpi_ener_gap)
+  + shock_dl_cpi_ener;
+  
+dl_cpi_ener_direct = dl_enerstar - dl_rp_enerstar_tnd + dl_s - dl_z_tnd ...
+  - dl_rp_cpi_core_tnd + dl_rp_cpi_ener_tnd;
+  
+e_dl_cpi_ener = dl_cpi_ener{+1};
+
+l_rp_cpi_ener = l_cpi_ener - l_cpi;
+
+% ----- Headline CPI level -----
+
+l_cpi = w_core * l_cpi_core + w_food * l_cpi_food + w_ener * l_cpi_ener + shock_l_cpi;
+
+e_dl_cpi = dl_cpi{+1};
+
+0 = w_core * l_rp_cpi_core_gap + w_food * l_rp_cpi_food_gap + w_ener * l_rp_cpi_ener_gap;
+
+% --------------------------------------
+% -------- Monetary policy --------
+% (standard, except ER deviation, but coeff=0)
+
+% ----- Inflation forecast based rule -----
+
+i = c1 * i{-1} + (1 - c1) * ( ...
+  + i_tnd ...
+  + c2 * d4l_cpi_dev ...
+  + c3 * l_y_gap ...
+  + c4 * (dl_s - dl_s_tar) ...
+  ) ...
+  + shock_i;
+
+d4l_cpi_dev = d4l_cpi{+4} - d4l_cpi_tar;
+
+i_tnd = r_tnd + d4l_cpi_tar + dl_rp_cpi_core_tnd;
+
+% ----- Real interest rate -----
+
+r = i - e_dl_cpi_core;
+
+r_tnd = rstar_tnd + prem + e_dl_z_tnd;
+
+r4_gap = (r_gap + r_gap{+1} + r_gap{+2} + r_gap{+3}) / 4  + prem_d_gap;
+
+e4_r_gap = (r_gap + r_gap{+1} + r_gap{+2} + r_gap{+3}) / 4;
+
+% ----- Lending premium -----
+
+prem_d = prem_d_gap + ss_prem_d;
+
+prem_d_gap = c6 * prem_d_gap{-1} + shock_prem_d_gap;
+
+% ----- Inflation target -----
+
+d4l_cpi_tar = c5 * d4l_cpi_tar{-1} + (1 - c5) * ss_d4l_cpi_tar + shock_d4l_cpi_tar;
+
+d4l_cpi_core_tar = d4l_cpi_tar + d4l_rp_cpi_core_tnd;
+
+d4l_cpi_food_tar = d4l_cpi_tar + d4l_rp_cpi_food_tnd;
+
+d4l_cpi_ener_tar = d4l_cpi_tar + d4l_rp_cpi_ener_tnd;
+
+% -------------------------------
+% -------- Exchange rate --------
+% (UIP & move to ER-target, det. by RER-tnd & target infl.diff.)
+
+l_s = ...
+  + e1 * (e_l_s - (i - istar - prem)/4) ...
+  + (1 - e1) * (l_s{-1} + dl_s_tar/4) ...
+  + shock_l_s;
+
+e_l_s = ...
+  + e2 * l_s{+1} ...
+  + (1 - e2) * (l_s{-1} + 2*(dl_z_tnd + d4l_cpi_tar + dl_rp_cpi_core_tnd - ss_dl_cpistar)/4);
+
+prem = e3 * prem{-1} + (1 - e3) * ss_prem + shock_prem;
+
+dl_s_tar = e4 * dl_s_tar{-1} + (1 - e4) * ( ...
+  dl_z_tnd + d4l_cpi_tar + dl_rp_cpi_core_tnd - ss_dl_cpistar - e5 * d4l_cpi_dev - e6 * l_z_gap ...
+  ) + shock_dl_s_tar;
+
+l_z = l_s + l_cpistar - l_cpi_core;
+
+e_dl_z = dl_z{+1};
+
+e_dl_z_tnd = dl_z_tnd{+1};
+
+% ----------------------------------
+% ------- Real money demand --------
+% (function of nominal i dev., cp. BNR: change in r-tnd)
+
+l_rmd = l_md - l_cpi;
+
+dl_rmd = ...
+  + m1 * dl_rmd{-1} ...
+  + (1 - m1) * (dl_y - dl_v + m2 * (i - i_tnd)) ...
+  + shock_dl_rmd;
+
+dl_v = m3 * dl_v{-1} + (1 - m3) * ss_dl_v + shock_dl_v;
+
+% ------------------------
+% -------- Trends --------
+% (weights for output-tnd are same as for output-gap)
+
+dl_cons_tnd   = r_cons  * dl_cons_tnd{-1} + (1 - r_cons)  * ss_dl_y_tnd + shock_dl_cons_tnd;
+dl_inv_tnd    = r_inv   * dl_inv_tnd{-1}  + (1 - r_inv)   * ss_dl_y_tnd + shock_dl_inv_tnd;
+dl_exp_tnd    = r_exp   * dl_exp_tnd{-1}  + (1 - r_exp)   * ss_dl_y_tnd + shock_dl_exp_tnd;
+dl_imp_tnd    = r_imp   * dl_imp_tnd{-1}  + (1 - r_imp)   * ss_dl_y_tnd + shock_dl_imp_tnd;
+
+dl_y_tnd = ...
+  + w_y_cons  * dl_cons_tnd ...
+  + w_y_inv   * dl_inv_tnd ...
+  + w_y_gdem  * dl_gdem_tnd ...
+  + w_y_exp   * dl_exp_tnd ...
+  - w_y_imp   * dl_imp_tnd;
+
+dl_y_agr_tnd  =  r2_y_agr  * dl_y_agr_tnd{-1} + (1 - r2_y_agr) * ss_dl_y_agr_tnd + shock_dl_y_agr_tnd; % no role yet
+
+dl_z_tnd      = r_z * dl_z_tnd{-1} + (1 - r_z)  * ss_dl_z_tnd   + shock_dl_z_tnd;
+
+dl_rp_cpi_food_tnd  = r_rp_food * dl_rp_cpi_food_tnd{-1} + (1 - r_rp_food) * ss_dl_rp_cpi_food_tnd + shock_dl_rp_cpi_food_tnd;
+dl_rp_cpi_ener_tnd  = r_rp_ener * dl_rp_cpi_ener_tnd{-1} + (1 - r_rp_ener) * ss_dl_rp_cpi_ener_tnd + shock_dl_rp_cpi_ener_tnd;
+
+% ----------------------------------
+% -------- External sector ---------
+
+l_ystar_gap   = r_ystar * l_ystar_gap{-1} + shock_l_ystar_gap;
+
+dl_cpistar    = r_cpistar * dl_cpistar{-1} + (1 - r_cpistar) * ss_dl_cpistar + shock_dl_cpistar;
+e_dl_cpistar  = dl_cpistar{+1};
+
+istar         = r_istar * istar{-1} + (1 - r_istar) * (ss_rstar_tnd + ss_dl_cpistar) + shock_istar;
+rstar_tnd     = r_rstar_tnd * rstar_tnd{-1} + (1 - r_rstar_tnd) * ss_rstar_tnd + shock_rstar_tnd;
+
+l_rp_foodstar = l_foodstar - l_cpistar;
+l_rp_enerstar = l_enerstar - l_cpistar;
+
+l_rp_foodstar_gap   = r_rp_foodstar_gap * l_rp_foodstar_gap{-1} + shock_l_rp_foodstar_gap;
+l_rp_enerstar_gap   = r_rp_enerstar_gap * l_rp_enerstar_gap{-1} + shock_l_rp_enerstar_gap;
+
+dl_rp_foodstar_tnd = r_rp_foodstar_tnd * dl_rp_foodstar_tnd{-1} + (1 - r_rp_foodstar_tnd) * ss_dl_rp_foodstar_tnd + shock_dl_rp_foodstar_tnd;
+dl_rp_enerstar_tnd = r_rp_enerstar_tnd * dl_rp_enerstar_tnd{-1} + (1 - r_rp_enerstar_tnd) * ss_dl_rp_enerstar_tnd + shock_dl_rp_enerstar_tnd;
+
+% --------------------------------------
+% -------- Trend/gap identities --------
+
+!for 
+  l_y, l_y_agr, l_cons, l_inv, l_exp, l_imp, l_gdem, 
+  r, l_z
+  l_rp_cpi_food, l_rp_cpi_ener, l_rp_cpi_core
+  l_rp_foodstar, l_rp_enerstar
+!do
+  !transition_equations
+    ? = ?_tnd + ?_gap;
+!end
+
+% ------------------------------
+% -------- Growth rates --------
+
+!for
+  y, y_tnd, cons, cons_tnd, inv, inv_tnd, gdem, gdem_tnd, exp, exp_tnd, imp, imp_tnd
+  y_agr, y_agr_tnd,
+  cpi, cpi_core, cpi_food, cpi_ener
+  rp_cpi_food, rp_cpi_ener, rp_cpi_core, rp_cpi_food_tnd, rp_cpi_ener_tnd, rp_cpi_core_tnd
+  s, z, z_tnd
+  rmd
+  cpistar, foodstar, enerstar
+  rp_foodstar, rp_enerstar, rp_foodstar_tnd, rp_enerstar_tnd
+!do
+  !transition_equations
+    dl_?  = 4 * (l_? - l_?{-1});
+    d4l_? = (l_? - l_?{-4});
+!end
+
+% -----------------------------------------------------------
+% ------------- Measurement variables/equations -------------
+% -----------------------------------------------------------
+
+% -----------------------------------
+% -------- Hard observations --------
+
+!for 
+  def_y, grants_y, grev_y
+  l_y, l_y_agr, l_cons, l_gdem, l_inv, l_exp, l_imp
+  l_cpi, l_cpi_core, l_cpi_food, l_cpi_ener
+  i, prem_d, l_s, l_md
+  l_ystar_gap, l_cpistar, istar, rstar_tnd
+  l_foodstar, l_enerstar
+  l_rp_foodstar_gap, l_rp_enerstar_gap
+!do
+  !measurement_variables
+    obs_?
+  !measurement_equations
+    obs_? = ?; % dl_cpi_core
+!end
+
+% ------------------------------------------
+% -------- Expert/judgemental tunes --------AK added Oct 13, def_y, grev_y
+
+!for
+  gdem_y, oexp_y, def_y, grev_y   
+  gdem_y_str, oexp_y_str, grev_y_str
+  gdem_y_cyc, oexp_y_cyc, grev_y_cyc
+  grev_y_discr, oexp_y_discr, gdem_y_discr
+  l_y_tnd, l_cons_tnd, l_inv_tnd, l_gdem_tnd, l_exp_tnd, l_imp_tnd
+  d4l_cpi_tar, l_rp_cpi_food_tnd, l_rp_cpi_ener_tnd
+  dl_cpi_core, dl_cpi_food, dl_cpi_ener, dl_cpi
+  r_tnd, l_z_tnd, prem, dl_s_tar
+  def_y_str, def_y_discr, grants_y
+  l_y_gap, l_cons_gap, l_inv_gap, l_gdem_gap, l_exp_gap, l_imp_gap
+  l_y_agr_gap
+  l_z_gap
+  l_y, d4l_y
+  dl_s
+!do
+  !measurement_variables
+    tune_?
+  !measurement_equations
+    tune_? = ?;
+!end
+
+% ------------------------------------------------------------------------------
+% -------- Auxiliary variables/equations for shock tuning in the filter --------
+
+!for 
+  shock_dl_cons_tnd
+  shock_dl_cpi_ener
+  shock_dl_cpi_core
+!do
+  !transition_variables
+    aux_?
+  !transition_equations
+    aux_? = ?;
+  !measurement_variables
+    tune_?
+  !measurement_equations
+    tune_? = aux_?;
+!end
+
+% -----------------------------------------------
+% ------------- Reporting equations -------------
+% -----------------------------------------------
+
+!parameters
+
+"Share of import prices in CPI"           mu_pimp
+"Share of export prices in GDP deflator"  mu_pexp
+
+"share of fcy debt in total debt"       r_debt_fcy_rat
+"interest rate fcy debt persistence"    r_debt_fcy_intrate_pers
+"interest rate lcy debt persistence"    r_debt_lcy_intrate_pers
+
+gamma_r
+gamma_k
+gamma_BP_tnd
+% AK 7/14/23 replace k_bar by l_BP_tnd; % log(BP)=k, BP cum inflows mln$, 
+% BP does not go to fixed ss level k_bar=log(6500), but to trend 
+% with initial value trend set equal to actual in readData
+
+"Import share in consumption"   lam_imp_cons
+"Import share in investment"    lam_imp_inv
+"Import share in govdemand"     lam_imp_gdem
+"Import share in exports"       lam_imp_exp
+
+!reporting_equations
+
+% True percentages (added Oct 28, '22)
+!for
+  y, cons, inv, gdem, exp, imp
+  cpi, cpi_core, cpi_food, cpi_ener
+  s, z
+!do
+  pct_?   = exp(dl_?/100)*100 - 100;
+  pct4_?  = exp(d4l_?/100)*100 - 100;
+!end
+
+!for
+  i, r
+!do
+  pct_?   = exp(?/100)*100 - 100;
+!end
+
+% Levels exchange rate and nominal money demand
+s   = exp(l_s/100);
+md  = exp(l_md/100);
+dl_md = 4*(l_md - l_md{-1}); % ak 7/15/23 must[dbFcats be annualized
+
+% Deflators (recall: all annualized, *4)
+
+dl_pexp = dl_pexpstar + dl_s;
+dl_pimp = dl_pimpstar + dl_s;
+
+dl_pdom = (dl_cpi - mu_pimp * dl_pimp) / (1 - mu_pimp);
+
+dl_py   = mu_pexp * dl_pexp + (1 - mu_pexp) * dl_pdom;
+% deflator for govt demand assumed equal to dl_cpi_core to simplify
+
+% Nominal growth rates (recall:all annualized, *4)
+
+dl_nexp = dl_exp  + dl_pexp;
+dl_nimp = dl_imp  + dl_pimp;
+dl_ny   = dl_y    + dl_py;
+dl_ngdem = dl_gdem + dl_cpi_core;
+dl_ncons = dl_cons + dl_cpi_core; % 4/19 AK for ratios (% to nom GDP)
+dl_ninv  = dl_inv  + dl_cpi_core;
+
+% Nominal levels exports, imports, GDP
+
+nexp    = exp(log(nexp{-1}) + dl_nexp/100/4);
+nimp    = exp(log(nimp{-1}) + dl_nimp/100/4);
+ny      = exp(log(ny{-1}) + dl_ny/100/4); % get ny{-1} etc from dbAUX to have start value forecast
+ngdem   = exp(log(ngdem{-1}) + (dl_ngdem/100)/4); % idem
+ncons   = exp(log(ncons{-1}) + dl_ncons/100/4); % 4/19/23 AK for ratios
+ninv    = exp(log(ninv{-1}) + dl_ninv/100/4);
+
+tb_rat  = (nexp - nimp) / ny *100;
+
+% Capital account (Ostry/Ghosh/Chamon,2012:log(BP)=k; define rstar here, not done in model)
+% 7/14/23 trend eq for ss cumul capital inflows in line with real GDP, instead of k_bar
+rstar = istar - e_dl_cpistar;
+% first evaluate trend
+dl_BP_tnd = gamma_BP_tnd * dl_BP_tnd{-1} + (1-gamma_BP_tnd) * ss_dl_y_tnd;
+l_BP_tnd = dl_BP_tnd/4 + l_BP_tnd{-1};
+% then evaluate level
+l_BP  = l_BP{-1} + gamma_r * ( (r - rstar - prem)/4 - e_dl_z ) ...
+    - gamma_k * (l_BP{-1} - l_BP_tnd);
+dBP_usd = exp(l_BP/100) - exp(l_BP{-1}/100);
+
+% evaluate debt and deficit first before rest of BOP and MON
+% ak debt changes with deficit-/-grants, nb def_y and grants are over Q-GDP, as is debt
+debt_y = ...
+  + debt_lcy_y{-1} * (1) / exp(dl_ny/400) ...
+  + debt_fcy_y{-1} * exp(dl_s/400) / exp(dl_ny/400) ...
+  + def_y - grants_y;
+
+debt_fcy_rat = r_debt_fcy_rat * debt_fcy_y{-1} / debt_y{-1} + (1 - r_debt_fcy_rat) * ss_debt_fcy_rat;
+
+debt_fcy_y = debt_fcy_rat * debt_y;
+
+debt_lcy_y = debt_y - debt_fcy_y; % residual
+
+def_lcy_y = debt_lcy_y - debt_lcy_y{-1} * (1) / exp(dl_ny/400);
+
+def_fcy_y = debt_fcy_y - debt_fcy_y{-1} * exp(dl_s/400) / exp(dl_ny/400);
+
+% ak we need interest-rate update equations:
+% i_debt_fcy = r_debt_fcy_intrate_pers * i_debt_fcy{-1} + (1 -
+% r_debt_fcy_intrate_pers) * (ss_rstar_tnd + ss_dl_cpistar + ss_prem_debt_fcy)
+% i_debt_lcy = r_debt_lcy_intrate_pers * i_debt_lcy{-1} + (1 -
+% r_debt_lcy_intrate_pers) * (i_tnd + ss_prem_debt_lcy)
+
+intp_fcy_y = i_debt_fcy{-1}/400 * debt_fcy_y{-1} * exp(dl_s/400) / exp(dl_ny/400);
+
+intp_lcy_y = i_debt_lcy{-1}/400 * debt_lcy_y{-1} * (1) / exp(dl_ny/400);
+
+% External flow equilibrium (current account (RM=E-M) converted to mln $)
+% still need evaluate levels govt interest payments in usd for BOP
+dBG_usd = ( ( (def_fcy_y/100) * ny) /s ) * 1000; % for bor deficit RWFbln then to $mln
+NFG_usd = ( ( (grants_y/100)  * ny) /s ) * 1000; % net foreign grants govt RWFbln then to $mln
+
+dNFA_usd = (nexp - nimp) / s * 1000 + NFG_usd + dBG_usd + dBP_usd;
+
+% ak 7/15/23 trace monetary flows, share of bank in domestic financing deficit
+def_lcy_bank_y = 0.5 * def_lcy_y; % nb still over Q GDP in %!
+NCG = NCG{-1} + (def_lcy_bank_y/100) * ny;
+
+NFA = NFA{-1} + dNFA_usd * s/1000; % ignores ER valuation changes
+
+% Monetary flow equilibrium in bln RWF, private credit residual
+dNCP = diff(md) - dNFA_usd * s / 1000 - diff(NCG);

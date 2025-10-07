@@ -1,0 +1,132 @@
+
+There are the changes from main/2024-09-Sept to develop/2024-11-Nov-workshop:
+
+- Deleted files (not including results):
+	- QMFM/main/2024-09-Sept/+codes/+estim/estimationExample.m
+	- QMFM/main/2024-09-Sept/+codes/+estim/histChain.m
+	- QMFM/main/2024-09-Sept/+codes/+estim/kalmanLogLik.m
+	- QMFM/main/2024-09-Sept/+codes/+estim/mhSampler.m
+	- QMFM/main/2024-09-Sept/+codes/+estim/plotChain.m
+	- QMFM/main/2024-09-Sept/+codes/+estim/plotPriors.m
+	- QMFM/main/2024-09-Sept/+codes/+estim/prepareLogLikInputs.m
+	- QMFM/main/2024-09-Sept/+codes/+reporting/addPage.m
+	
+- Newly added files (MATLAB codes only):
+	- QMFM/develop/2024-11-Nov-workshop/+codes/+estim/distributionDemo.m
+	- QMFM/develop/2024-11-Nov-workshop/+codes/+estim/estimateQMFM.m
+	- QMFM/develop/2024-11-Nov-workshop/+codes/+estim/plotLLH.m
+	- QMFM/develop/2024-11-Nov-workshop/+codes/+estim/stdMultDemo.m
+	- QMFM/develop/2024-11-Nov-workshop/model/setparamNew.m
+	- QMFM/develop/2024-11-Nov-workshop/tunes/Alternative.m
+	- QMFM/develop/2024-11-Nov-workshop/workshop/arwmDemo.m
+	- QMFM/develop/2024-11-Nov-workshop/workshop/estimateExtHP.m
+	- QMFM/develop/2024-11-Nov-workshop/workshop/extHP.model
+	- QMFM/develop/2024-11-Nov-workshop/workshop/fevdDemo.m
+	- QMFM/develop/2024-11-Nov-workshop/workshop/kalmanFilter.m
+	- QMFM/develop/2024-11-Nov-workshop/workshop/kalmanFilterDemo.m
+	- QMFM/develop/2024-11-Nov-workshop/workshop/newtonDemo.m
+	- QMFM/develop/2024-11-Nov-workshop/workshop/plotLLH.m
+	- QMFM/develop/2024-11-Nov-workshop/workshop/stackedHPDemo.m
+
+- Modified files:
+	- QMFM/main/2024-09-Sept/+codes/+reporting/addDecompCharts.m
+		- help lines
+		- harmonizing the structure with addShockDecompositions
+	- QMFM/main/2024-09-Sept/+codes/+reporting/addDecompTables.m
+		- help line
+	- QMFM/main/2024-09-Sept/+codes/+reporting/addParameterComparison.m
+		help lines
+	- QMFM/main/2024-09-Sept/+codes/+reporting/addShockDecompositions.m
+		- help lines
+		- harmonizing the structure with addDecompCharts
+	- QMFM/main/2024-09-Sept/+codes/+reporting/addTablePage.m
+		- help lines
+		- harmonizing the inputs with addChartPage
+	- QMFM/main/2024-09-Sept/+codes/+reporting/addTrendsAndGaps.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/+reporting/barContrib.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/+reporting/calcDecompositions.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/+reporting/createParamLegend.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/+reporting/createScenarioLegend.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/+reporting/tableContrib.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/+utils/calcSubplotSize.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/+utils/checkFile.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/+utils/closeFigures.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/+utils/loadResult.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/+utils/processOptions.m
+		- help lines
+		- implementing the resultsDir options
+		- using scenario names as scenario legends by default, i.e. when the scenarioLegends option is empty
+	- QMFM/main/2024-09-Sept/+codes/+utils/saveCsv.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/+utils/saveEmf.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/+utils/saveReport.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/+utils/saveResult.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/+utils/selectFromList.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/+utils/writeMessage.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/+utils/writeSetparam.m
+		- help lines
+		- adding a fourth input, so that `arwm´ retsults can be written to the file
+	- QMFM/main/2024-09-Sept/+codes/calcForecast.m
+		- help lines
+		- removing obsolete `sstate´ command
+		- switching to true nonlinear simulation
+		- calculating shocjk decompositions
+	- QMFM/main/2024-09-Sept/+codes/calcHistForecast.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/filterHistory.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/readData.m
+		- help lines
+		- putting obs_l_cpi_core into dbObsTrans instead of dbObs, since the discrepancy shock has been removed, so it can not be observed
+		- using pct4 variables calculated from seasonally adjusted series, so that the filtered results of missing observations are consistent with actual history 
+	- QMFM/main/2024-09-Sept/+codes/readModel.m
+		- help lines
+		- removing obsolete (and redundant() `sstate´ command
+	- QMFM/main/2024-09-Sept/+codes/reportCompareData.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/reportCompareForecast.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/reportForecast.m
+		- help lines
+		- adding shock decomposition charts to the reportCompareData
+		- using the more elaborate versions of `addChartPage´ and `addTablePage´
+	- QMFM/main/2024-09-Sept/+codes/reportForecastChangeDecomp.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/reportHistForecast.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/reportHistory.m
+		- help lines
+	- QMFM/main/2024-09-Sept/+codes/reportModel.m
+		- help lines
+	- QMFM/main/2024-09-Sept/mainSettings.m
+		- standard settings, i.e. round name, round ID, etc.
+		- addin the new `resultsDir´ option
+		- removing the deleted shock `shock_l_cpi´ from shock lists
+		- adding new option `opts.forecast.shockDecompRange´
+	- QMFM/main/2024-09-Sept/model/minecofin.model
+		- removing `shock_l_cpi´
+		
+- Parameter changes:
+	- in `setparamOrig´:
+		- `std_shock_l_cpi´ setting removed
+		- `std_shock_l_y´ set to 1 (irrelevant for the filtration, the shock size is determined by observed data)
+	- in `setparamNew´: all the above, plus
+		- `b1´ to 0.35 from 0.45, to increase forward-lookingness of the core Phillips curve
+		- `c2´ to 1.2 from 0.2, to really be in line the the BNR calibration (they use a different definition of the nominal neutral rate, with inflation expectations)
+		- `c3´ to 0.2 from 0.5, to be in line with the forecast model
+		- `e1´/`e2´ to 0.5/0.5 from 0.2/0.2, to have a more reasonable UIP so that `l_z_gap´ responses are less persistent

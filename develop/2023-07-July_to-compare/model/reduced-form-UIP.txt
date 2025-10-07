@@ -1,0 +1,41 @@
+
+l_s = e1 * (e_l_s - (i - istar - prem)/4) + (1 - e1) * (l_s{-1} + dl_s_tar/4) + shock_l_s;
+  
+e_l_s = e2 * l_s{+1} + (1 - e2) * (l_s{-1} + 2*(dl_z_tnd + d4l_cpi_tar + dl_rp_cpi_core_tnd - ss_dl_cpistar)/4);
+  
+dl_s_tar = e4 * dl_s_tar{-1} + (1 - e4) * (dl_z_tnd + d4l_cpi_tar + dl_rp_cpi_core_tnd - ss_dl_cpistar) + shock_dl_s_tar;
+
+
+(subtract l_s_ from the RHS)
+0 = e1 * (e_l_s - l_s - (i - istar - prem)/4) + (1 - e1) * (l_s{-1} - l_s + dl_s_tar/4) + shock_l_s;
+
+(steady state version of the target equation)
+dl_s_tar = dl_z_tnd + d4l_cpi_tar + dl_rp_cpi_core_tnd - ss_dl_cpistar;
+
+
+(substitute e_l_s into the RHS)
+0 = e1 * ((e2 * (l_s{+1} - l_s) + (1 - e2) * (l_s{-1} - l_s + 2*(dl_z_tnd + d4l_cpi_tar + dl_rp_cpi_core_tnd - ss_dl_cpistar)/4)) - (i - istar - prem)/4) + (1 - e1) * (l_s{-1} - l_s + dl_s_tar/4);
+
+
+(substitute dl_s_tar into the RHS)
+0 = e1 * ((e2 * (l_s{+1} - l_s) + (1 - e2) * (l_s{-1} - l_s + 2*dl_s_tar/4)) - (i - istar - prem)/4) + (1 - e1) * (l_s{-1} - l_s + dl_s_tar/4);
+
+
+(substitute definition of dl_s)
+0 = e1 * ((e2 * dl_s{+1}/4 + (1 - e2) * (-dl_s/4 + 2*dl_s_tar/4)) - (i - istar - prem)/4) + (1 - e1) * (-dl_s/4 + dl_s_tar/4);
+
+
+(annualize, i.e. multiply by 4)
+0 = e1 * ((e2 * dl_s{+1} + (1 - e2) * (-dl_s + 2*dl_s_tar)) - (i - istar - prem)) + (1 - e1) * (-dl_s + dl_s_tar);
+
+
+(dl_s = dl_s_tar in the steady state)
+0 = e1 * ((e2 * dl_s{+1} + (1 - e2) * dlđ_s - (i - istar - prem)));
+
+
+(divide by e1)
+0 = e2 * dl_s{+1} + (1 - e2) * dl_s - (i - istar - prem);
+
+
+(dl_s{+1} = dl_s in the steady state, rearrange)
+i - istar - prem = dl_s;

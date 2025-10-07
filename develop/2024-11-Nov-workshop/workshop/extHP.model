@@ -1,0 +1,31 @@
+
+!transition_equations
+
+y_gap = phi * y_gap{-1} + shock_y_gap;
+
+dy_tnd = (1 - rho) * delta + rho * dy_tnd{-1} + shock_dy_tnd;
+
+dy_tnd = y_tnd - y_tnd{-1};
+
+!measurement_equations
+
+y = y_gap + y_tnd;
+
+!transition_variables
+
+y_gap
+dy_tnd
+y_tnd
+
+!measurement_variables
+
+y
+
+!parameters
+
+phi, rho, delta
+
+!transition_shocks
+
+shock_y_gap
+shock_dy_tnd
