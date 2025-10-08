@@ -271,7 +271,7 @@ opts.reportModel.stdComp.range = qq(2006, 1) : qq(2023, 4);
 %% Historical filter options
 
 % Filtered range
-opts.filterHistory.range = qq(2006, 1) : qq(2025, 1); % default 2024Q2 if data; extend filter for shocktuning +2Q
+opts.filterHistory.range = qq(2006, 1) : qq(2025, 2); % default 2024Q2 if data; extend filter for shocktuning +2Q
 
 % Variables whose trend/gap decomposition is plotted; AK: can't add variables w/o changing reporting codes
 opts.filterHistory.trendGapVars = [
@@ -538,7 +538,7 @@ opts.histForecast.exogvars = [
 %% Forecast options
 
 % Horizon of forecast
-opts.forecast.range = qq(2025, 2) : qq(2029, 4); % extended forward each Q if new data
+opts.forecast.range = qq(2025, 3) : qq(2029, 4); % extended forward each Q if new data
  
 opts.forecast.scenarioNames = ...
     ["Baseline"];%, "Alternative"];
