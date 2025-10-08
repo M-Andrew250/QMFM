@@ -1,4 +1,4 @@
 # QMFM
-# Main model codes directories
-# QPM project model files
-# matlab iris solver
+Quarterly Macro Fiscal Model (QMFM) 
+Quarterly Projection Model 
+Main model codes directory
