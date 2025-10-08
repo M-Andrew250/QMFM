@@ -8,7 +8,7 @@ function opts = mainSettings
 
 opts.roundId        = "2025 Sept Forecast";
 opts.modelFile      = "minecofin";
-opts.mainDataFile   = "2025-09-30"; % name of data/Rwametric file 
+opts.mainDataFile   = "2025-10-07"; % name of data/Rwametric file 
 opts.addDataFile    = "2025-09-15"; % has CBO proj RIR-US and old GTM numbers
 opts.compRound      = "main/2025-03-March"; % comparison round
 
