@@ -126,11 +126,11 @@ db = dboverlay(gpm, db); % enerstar exists in both datab, it takes 2d; if we wan
 
 rngAdj = qq(1995, 1) : qq(2021,4); % 12/12/23 was (2019,2)
 db.nginv(rngAdj) = 0.8 * db.nginv(rngAdj);
-rngAdj1 = qq(2022, 1) : opts.filterHistory.rangePlot(end); % 0.75 corr fr 2022 pending NA corr ADJUST THIS EACH RUN
+rngAdj1 = qq(2022, 1) : opts.filterHistory.range(end); % 0.75 corr fr 2022 pending NA corr ADJUST THIS EACH RUN
 db.nginv(rngAdj1) = 0.75 * db.nginv(rngAdj1); 
 
 %-------- adj for outlier govtCons NA 2019Q2 ----(pending NISR NA adj)
-rngAdj = qq(2019, 2) : qq(2019,2); % 1/19/24 ak 
+rngAdj = qq(2019, 2) : qq(2019, 2); % 1/19/24 ak 
 pgcons = db.ngcons(rngAdj) / db.gcons(rngAdj); % calc deflator
 ngconsAdj = 80;
 db.ngcons(rngAdj) = db.ngcons(rngAdj) - ngconsAdj; % adjust nom gcons, see below for adj inv
