@@ -34,8 +34,8 @@ dbObs.tune_gdem_y_str(rngTune) = 24.5;
 %% GDP extended filter for Nowcast Q 2025Q3, alternatively tune most recent Q with prel. NA
 % filtration range set to a few Q beyond data (here: 2025Q3 with hist tunes for y-on-y GDP growth from Nowcast(no s.a. needed)
 % filter distributes shocks among other FD, so movement in GDP not only attributed to cons shock (cf Baseline tune)
-rngTune = qq(2025, 3) : qq(2025, 3);
-dbObs.tune_d4l_y (rngTune) = 100 * log(1 + (7.7)/100); % Nowcast Sept'25
+rngTune = qq(2025, 2) : qq(2025, 3);
+dbObs.tune_d4l_y (rngTune) = 100 * log(1 + [9.1 , 7.7]/100); %Nowcast Sept'25
 
 %%CPI option to soft/hard-tune CPIs Near-Term based on NBR-forecast/judgement, expected shocks
 % CPI_core can be soft-tuned to match any NBR or prel. CPI forecast for later Q--not used now

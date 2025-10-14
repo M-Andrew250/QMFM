@@ -296,10 +296,11 @@ db.inv(qq(2023,  3) : qq(2025,  1))   = NaN;
 db.exp(qq(2023,  3) : qq(2025,  1))   = NaN;
 db.imp(qq(2023,  3) : qq(2025,  1))   = NaN;
 db.gdem(qq(2023, 3) : qq(2025,  1))   = NaN;
-% EvM approach
-% db.exp(qq(2023, 3) : qq(2024, 2))   = NaN;
-% db.imp(qq(2023, 3) : qq(2024, 2))   = NaN;
 
+% Supress NA sup GDP
+db.y(qq(2025, 2) : qq(2025, 2))       = NaN;
+db.ny(qq(2025, 2) : qq(2025, 2))      = NaN;
+db.y_agr(qq(2025, 2) : qq(2025, 2))   = NaN;
 % !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 % ----Seasonal adjustment:most transition variables (except i), some aux.variables (except debt)----

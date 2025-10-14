@@ -141,7 +141,7 @@ tunes.i(rngExog) = dbObs.obs_i(rngExog);
 rngExog = qq(2025, 4);
 pln = exogenize(pln,  rngExog, 'i');
 pln = endogenize(pln, rngExog, 'shock_i');
-tunes.i(rngExog) = 100 * log(1 + (6.75+0.3)/100);
+tunes.i(rngExog) = 100 * log(1 + (6.75 + 0.3)/100);
 
 %% GDP & demand: recall we run ext.filter 1-2 Q beyond data (2025Q3-4) with hist tunes y-on-y GDP growth fr Nowcast
 % we 'read' demand shocks for Q3-4, then set back filter-range to end datarange; soft-tune demand shocks 1-2Q ahead
@@ -174,7 +174,7 @@ rngExog = qq(2025, 4);
 pln = exogenize(pln,  rngExog, 'dl_s');
 pln = endogenize(pln, rngExog, 'shock_l_s');
 %tunes.l_s(rngExog) = 100*(log(1372.7) + log(1 + 0.083)); % if level is tuned,eg w. annualized assumed depr.rate from last observed
-tunes.dl_s(rngExog) = 100 * log(1 + 0.029*4); % equivalent! tune dl_s (annualized!) we had to add tune_dl_s to minecofin.model
+tunes.dl_s(rngExog) = 100 * log(1 + 0.029 * 4); % equivalent! tune dl_s (annualized!) we had to add tune_dl_s to minecofin.model
 
 %% Fiscal variables (follows FY), esp. deficit (GFS1986), govt demand G&S, revenue (so: other expend implicit)
 % forecast: fr Treasury plan but NOT YET; for now: using fiscal targets PCI-program 2025/26 a.f.(May25 review)
